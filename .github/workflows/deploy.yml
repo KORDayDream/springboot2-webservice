@@ -35,7 +35,7 @@ jobs:
         shell: bash
         
       - name: make zip file
-        run: zip -r ./$GITHUB_SHA.zip
+        run: zip -r ./$GITHUB_SHA.zip .
         shell: bash
         
       - name: configure AWS credentials
