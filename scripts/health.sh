@@ -20,6 +20,7 @@ do
   if [ ${UP_COUNT} -ge 1 ]
   then # real 문자열 여부 확인
     echo "> Health Check 성공"
+    echo "> Response: ${RESPONSE}"
     switch_proxy
     break
   else
@@ -35,5 +36,5 @@ do
   fi
 
   echo "> Health Check 연결 실패. 재시도..."
-  sleep 10
+  sleep 5
 done
